@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for, while, forEach, Do While Loops</title>
+  </head>
+
+  <body>
+    <div class="container">This is about loops</div>
+    <script>
+      console.log("THIS IS TUT 55");
+
+      let i = 0;
+
+      for (i = 0; i < 3; i++) { // i=0 ase initialization kehti hain samicolon sy pehle yah sirf ek bar loop ka liye run hoti haias case me i=0 ho jai ga
+
+        // i<3 is codition
+
+        // and then loop i++ ma jai ga or 1 plus ho jai ga
+        console.log(i);
+      }
+
+      let friends = ['rohan','ahmed','poja','rahi','raheel'];
+
+        for (let index = 0; index < friends.length; index++) {
+        console.log('hello friends,' + friends[index]);
+      }
+
+      friends.forEach(function f(element){
+        console.log('hello friends,' + element + 'to modern javascript')
+      });
+      // yah be wahi kaam kre ga jo upar wala kr raha hai
+
+      // for of loop
+
+      for (element of friends){
+        console.log('hello friends,' + element + 'to modern javascript again')
+
+      }
+        // asa be ap use kr skte ho kesi array ko iterate
+        
+        // object iterate 
+
+        // use this loop to iterate over objects in javascript 
+
+        // for in loop
+
+        let employee = {
+            name : 'harry',
+            salary : '2',
+            chanel : 'cwh'  
+        }
+
+        for (key in employee){
+            console.log(`the ${key} of employee is ${employee[key]} `);
+        }
+
+       //  while loop in js
+
+        let t = 0;
+      while (t<4){
+          console.log(`${t} is less than 4`);
+            t++; 
+        }
+
+        // do while loop in js
+        
+        let j = 34;
+        do {
+             console.log(`${j} is less than 4 and we are inside in do whike loop`);
+             j++;
+          }while(j<4);
+        
+    </script>
+  </body>
+</html>

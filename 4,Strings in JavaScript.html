@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae eum porro at enim dolorem minus alias aperiam iste, vel, fugit et voluptates odit, aliquid cupiditate itaque quidem. Odio quidem aperiam ullam eveniet</p>
+    </div>
+    <script>
+        var name = 'rahi';
+        var channel = 'codewithme';
+        var temp = `${name} is a nice person and he has channel called ${channel}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`length of name is ${len}`);
+
+        console .log('hello world\n harry \and') // /n asa matlb ab new line aa jai ge jo harry hai wo new line me aai ga ('thats call ecape charcter')
+
+        var y = new String("this ")
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3>this is h3 heading</h3>' // java sy element incert kr diye 
+    </script>
+</body>
+</html>

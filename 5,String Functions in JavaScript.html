@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JavaScript</title>
+
+</head>
+
+<body>
+    <script>
+         var str = "this is a string"
+         console.log(str);
+
+         // frist occurence of a substring
+         var position = str.indexOf('is');
+         console.log(position);  // index bata ta hai 0t 1h 2is 
+
+         // last occurence of a substring
+         position = str.lastIndexOf('is');
+         console.log(position);
+
+         // substring from a string
+
+         var substr = str.slice(1,6) // 1,5 tak print kre ga 
+         console.log(substr);
+
+         var substr = str.substring(1,6) // yah negtive value nhi leta hai baki sub same hai asme be
+         console.log(substr);
+
+         var replaced = str.replace('string','rahi')
+         console.log(str);
+         console.log(replaced);
+
+         //about upar case lower case
+
+         console.log(str.toLocaleUpperCase());
+         console.log(str.toLocaleLowerCase());
+         
+         var newstring= str.concat('newstring');
+         console.log(newstring);
+
+         // trim funcation jo white spaces ko hata dega
+
+         var strwithwidepaces =   'this is          whitespes  '
+         console.log(strwithwidepaces);
+         console.log(strwithwidepaces.trim()) // jo this ka pehla and white ka bad jo spaces hain anko hata ta hai
+
+         // ek string me sy charcter ko kesa extrct karti hain 
+
+         var char3 = str.charCodeAt(2); //yah wo os chracter ka code deta hai
+         console.log(char3) 
+
+         console.log(str[3])
+
+
+
+         
+    </script>
+</body>
+</html>

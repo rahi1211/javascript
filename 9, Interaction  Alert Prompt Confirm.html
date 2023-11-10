@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>: Interaction - Alert, Prompt, Confirm</title>
+</head>
+<body>
+    <div class="container">
+        this is a page
+    </div>
+    <script>
+        // Alert in in-browser in javascript-alert does not retrun anything
+        alert('this is a message ');
+
+        let name = prompt('what is your name?','Guest');
+        console.log(name);
+
+        // confrim / yah tab use hoa hai jab ap kuch file ko del kr rahe ho etc etc
+
+        let deletepost = confirm('Are you sure you want to delete');
+
+        // code to delete the post
+
+        if (deletepost){
+            console.log('your post has been deleted successfully');
+        }
+        // code to cancel the deletion of the post
+        else{
+            console.log('your post has been not been deleted');
+        }
+
+        console.log(deletepost);
+  
+    </script>
+</body>
+</html>

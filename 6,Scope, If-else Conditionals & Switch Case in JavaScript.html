@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>itm-1</li>
+            <li>itm-2</li>
+            <li>itm-3</li>
+            <li>itm-4</li>
+            <li>itm-5</li>
+            <li>itm-6</li>
+            <li>itm-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = 'this is a strig'
+        var string1 = 'this is a strig2'
+        console.log(string1);
+
+        {
+         let a= 'u6'
+         console.log(a);  // yah or var same kaam karti hain verbale ka but yah 2 same chez nhi leta  
+        }
+
+        const a = 'this cannot be change'; 
+        console.log(a); // const ko ap chnage nhi kar skte
+
+        // condetions
+
+        let age = 2;
+        if (age>18){
+            console.log('you can drink');
+        }
+        else if (age==2){
+            console.log('age is 2');
+        }
+        else{
+            console.log('you cant drink');
+        } 
+
+        //
+
+        const cups = 4 // jo jo value match hoge wahi rint hogi
+        switch (cups){
+
+            case 4:
+            console.log('the value of cps is 4');
+            break; // break matlb break lagai ga oska bad wala sare print ho jai ge
+
+            case 41:
+            console.log('the value of cps is 41');
+            break;
+
+            case 42:
+            console.log('the value of cps is 42');
+            break;
+
+            case 43:
+            console.log('the value of cps is 43');
+            break;
+
+        default:
+            console.log('this value of cups is none of 4,41,42,43')
+            break;
+        }
+             
+
+
+    </script>
+</body>
+</html>
