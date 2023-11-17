@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Listening to Events</title>
+  </head>
+  <style>
+    #btn{
+        padding: 10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+  </style>
+
+  <body>
+    browser Events click contextmenu
+    <!--jab right click karte ho yeh fire hota hai EVENT fire matlb event howa -->
+
+    mouseover/mouseout
+    <!-- mouseover matlb ka matlb kesi element ka andr le jana , mouseout ka matlb hai kesi elements bhir nikalna -->
+
+    mousedown/mouseup
+    <!-- aska matlb yah apka mouse press kiye gya hai ya apka mouse upar aya hai -->
+
+    mousemove submit
+    <!-- matlb kuch submit kiye -->
+
+    focus
+    <!-- matlb ap na kesi input tag py focus kiye -->
+
+    DOMContentLoaded
+    <!-- yah ek event hota hai apka jo pura html ka dom load ho jati hai toh yah fire hota hai -->
+
+    transitionend
+    <!-- yah css jo ap transitions karwata ho -->
+
+    <div class="container">
+      <h1>THIS IS MY HEADING</h1>
+
+      <p id="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae,
+        neque dolorum odit labore, doloribus quod nihil vel inventore sapiente
+        ut totam dolores a officiis placeat nam dignissimos sit similique?
+        Officia laudantium eaque dignissimos. Reiciendis delectus deleniti eos
+        fugit maxime nihil nesciunt cupiditate sapiente quas assumenda facere
+        quasi hic perferendis ratione pariatur accusantium voluptatem eligendi,
+        perspiciatis accusamus incidunt ipsam fuga, ab voluptate. Minus quos
+        saepe illo hic? Labore similique beatae, quod deleniti accusamus,
+        voluptatum molestias a quibusdam, consequuntur doloribus totam. Dolores
+        laudantium dolorum sapiente amet pariatur a ex mollitia dolore ipsam
+        minus accusantium praesentium expedita, quam voluptatem quaerat quidem
+        illum distinctio porro hic fuga fugiat necessitatibus! Placeat aut
+        perspiciatis, explicabo porro saepe, quibusdam, blanditiis cum impedit
+        commodi assumenda voluptatum. Corporis sed debitis accusamus delectus
+        obcaecati numquam officia nostrum laboriosam quod, cupiditate placeat
+        officiis nam totam iusto tenetur! Iure explicabo facere ab delectus ut,
+        quis, sit optio expedita, esse eum ullam impedit. Ea odit dolorem illum
+        atque iusto nulla voluptatum accusantium consectetur voluptas officia
+        praesentium sequi impedit nihil, quod eos dolores aliquam repellendus
+        vero esse molestias ex tenetur! Perferendis porro quas accusamus
+        doloremque laborum! Impedit quibusdam commodi nemo doloribus, id rerum
+        qui iste animi consequuntur sint accusantium fuga numquam necessitatibus
+        facilis unde quasi placeat similique voluptas eius! Ullam sunt amet
+        dolorem quasi, facere explicabo omnis aperiam velit consectetur, nobis
+        officia molestias laudantium possimus.
+      </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log('mouse inside para');    
+
+        });
+
+        para.addEventListener('mouseout',function run(){
+            console.log('mouse went  outside para');    
+
+        });
+
+        function toggleHide() {
+           let btn = document.getElementById('btn');
+           if (para.style.display != 'none'){
+           para.style.display = 'none';   
+           }
+           else{
+               para.style.display = 'block';
+           }
+           
+    }
+    </script>
+  </body>
+</html>

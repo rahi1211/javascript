@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval & setTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log('this is a tutorial 58');
+
+        // setTimeout --> allow us to run the funcation once after the interval of time
+
+        // cleartimeout --> allow us to run the funcation repeatedly after the interval of time
+        
+        function  greet(name , bytext){
+         console.log('hello good morning', name + bytext);
+       }
+        setTimeout(greet, 2000 ,'rahi' , 'Take care'); //pehla funcation dosra timer 
+        
+      setIntervalID =   setInterval(greet, 2322000 ,'rahi' , 'good night'); // ek timr deka bar bar run karwa skten hain
+      clearIntervalID = (clearInterval);
+
+      function displaytime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+      }
+
+      <!-- setInterval(displaytime , 1000); -->
+
+
+    </script>
+</body>
+</html>

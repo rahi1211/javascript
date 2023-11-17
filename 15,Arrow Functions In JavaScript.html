@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions In JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow funcation tutoeial
+    </div>
+    <script>
+        // Arrow function 
+
+        // arrow funcations short cuts deta hai
+        greet = () => {
+            console.log('good')
+        }
+
+        let sum2 = (a,b) => {
+            return a+b;
+           };
+
+        // short cut   
+        let sum1 = (a,b) => a+b;   
+
+        let half = a => a/2; 
+
+      //  function greet() {
+          //  console.log("Hello");
+     //  }
+       greet();
+
+       setTimeout(() => {
+        console.log('good NIHhT');
+
+       },3000); // 3s ka bad yeh print ho jai ga 
+
+    let obj1={
+        names: [ "Rahi" , 'harry' , 'khy' , 'dj' ] ,
+        speak(){
+            this.names.forEach((student)=>{
+                console.log( ' kukdoo kooo ' + student);
+            });
+        }   
+    }        
+    obj1.speak();
+    </script>
+</body>
+</html>

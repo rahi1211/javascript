@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Working with JSON in JavaScript </title>
+</head>
+
+<!-- json stands for , JavaScript object notaion-->
+
+<!-- or yah ek format hota hai store and tranport karni ka liye data ko  -->
+
+<body>
+    <div class="container">
+        this is container
+    </div>
+
+    <script>
+        let jsonObj = {
+            name: 'rahi',
+            chanel: 'codewithharry',
+            friend: 'rohan',
+            food: 'briyani'
+        }
+        console.log(jsonObj);
+
+        let myJsonStr = JSON.stringify(jsonObj); // you can convrt to string
+        console.log(myJsonStr); 
+
+        myJsonStr = myJsonStr.replace('codewithharry', 'cwh');
+        console.log(myJsonStr);
+
+        newJSonobj = JSON.parse(myJsonStr); // PARSE MATLB VAILD JSON STRING HONE CHAIYE
+        console.log(newJSonobj); 
+    </script>
+</body>
+</html>
